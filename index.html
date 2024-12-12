@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>伝送理論</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　伝送理論　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+<p class="di"><b>｢伝送理論｣</b></p>とは、コンピュータで情報を伝送する技術や、伝送データの信頼性を高めるための技術に関する理論のことです。<br>
+
+
+<strong>(1)通信方法</strong><br>
+コンピュータで情報を伝送する通信方式は、次のようなものがあります。<br>
+<P><IMG src="1-1-4-1-1.JPG" width="500" border="0"></P>
+
+<strong>(2)多重化方式</strong><br>
+<p class="di"><b>｢多重化｣</b></p>とは、1本の伝送路で、複数の通信を同士に行う技術のことです。<br>
+代表的な多重化方式には、次のようなものがあります。<br>
+<P><IMG src="1-1-4-1-2.JPG" width="500" border="0"></P>
+
+<strong>(3)信号同期方式</strong><br>
+<p class="di"><b>｢信号同期｣</b></p>とは、送信側と受信側でデータ送受信のタイミングを合わせることです。<br>
+代表的な信号同期方式には、次のようなものがあります。<br>
+<P><IMG src="1-1-4-1-3.JPG" width="500" border="0"></P>
+<P><IMG src="1-1-4-1-4.JPG" width="500" border="0"></P>
+
+<strong>(4)誤り制御方式</strong><br>
+<p class="di"><b>｢誤り制御｣</b></p>とは、データを伝送するときに、データの誤りを検出したり、訂正したりする技術のことです。<br>
+代表的な誤り制御方式には、次のようなものがあります。<br>
+<P><IMG src="1-1-4-1-5.JPG" width="500" border="0"></P>
+
+<strong>(5)変復調方式</strong><br>
+デジタルデータをアナログの伝送路で伝送する場合、デジタルデータをアナログ信号に変換する処理が必要になります。この処理を<p class="di"><b>｢変調｣</b></p>といいます。<br>
+反対に、アナログ信号をデジタルデータに変換する処理のことを<p class="di"><b>｢復調｣</b></p>といいます。<br>
+代表的な変復調方式には、次のようなものがあります。<br>
+<P><IMG src="1-1-4-1-6.JPG" width="500" border="0"></P>
+
+    <script>
+        const buttom = document.getElementById('buttom');
+        const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+    
+        // マウスホバー時
+        buttom.addEventListener('mouseover', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '1';
+            });
+        }, false);
+    
+        // マウスが離れている時
+        buttom.addEventListener('mouseleave', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '0';
+            });
+        }, false);
+    </script>
